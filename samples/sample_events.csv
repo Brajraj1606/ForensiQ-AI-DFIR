@@ -1,0 +1,6 @@
+Event_ID,Timestamp_UTC,Event_Type,Severity,MITRE_ID,Summary,Process_Name,Source_Artifact
+EVT-0001,2026-10-24T01:14:22Z,Logon Succeeded,LOW,T1078,Successful authentication session established (Event 4624),explorer.exe,DC01_Security_Audit.evtx
+EVT-0002,2026-10-24T01:15:04Z,Process Execution,MEDIUM,T1059,New process spawned (Windows Event 4688),cmd.exe,DC01_Security_Audit.evtx
+EVT-0003,2026-10-24T01:16:30Z,Process Execution,HIGH,T1059.001,Encoded PowerShell Command Execution,powershell.exe,DC01_Security_Audit.evtx
+EVT-0004,2026-10-24T01:20:45Z,Shadow Copy Invalidation,CRITICAL,T1490,Adversary executed vssadmin to delete volume shadow copies,vssadmin.exe,DC01_Security_Audit.evtx
+EVT-0005,2026-10-24T01:25:30Z,Forensic Log Cleared,CRITICAL,T1070.001,Security Event Log was purposefully cleared (Event ID 1102),cmd.exe,DC01_Security_Audit.evtx

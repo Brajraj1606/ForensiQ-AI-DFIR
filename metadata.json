@@ -1,0 +1,6 @@
+{
+  "name": "ForensiQ AI - Digital Forensics & Incident Response Workstation",
+  "description": "Professional-grade AI-powered digital forensics and incident response platform featuring automated evidence ingestion, chain-of-custody verification, timeline reconstruction, MITRE ATT&CK correlation, and court-admissible forensic reporting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

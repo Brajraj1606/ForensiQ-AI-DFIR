@@ -1,0 +1,19 @@
+# ForensiQ AI - Python Dependencies
+# Compatible with Python 3.10+
+# Hacktoberfest 2026 Submission
+
+# Web Application Framework
+streamlit>=1.38.0,<2.0.0
+
+# Tabular Data Processing
+pandas>=2.2.0,<3.0.0
+
+# Local AI / LLM Inference (Offline & Open-Weight)
+ollama>=0.3.3,<0.5.0
+
+# Automated Test Framework
+pytest>=8.3.0,<9.0.0
+
+# PDF Report Generation (NIST SP 800-86 Compliant)
+reportlab>=4.2.0,<5.0.0
+fpdf2>=2.7.9,<3.0.0

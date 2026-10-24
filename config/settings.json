@@ -1,0 +1,37 @@
+{
+  "project_name": "ForensiQ-AI",
+  "version": "2.4.0",
+  "standards": [
+    "ISO/IEC 27037:2012 (Guidelines for identification, collection, acquisition and preservation of digital evidence)",
+    "NIST SP 800-86 (Guide to Integrating Forensic Techniques into Incident Response)",
+    "Federal Rules of Evidence Rule 901 (Authenticating or Identifying Evidence)"
+  ],
+  "hashing": {
+    "primary_algorithm": "SHA-256",
+    "secondary_algorithm": "MD5",
+    "enforce_bitstream_verification": true
+  },
+  "detection_rules": {
+    "failed_login_threshold": 3,
+    "failed_login_window_seconds": 60,
+    "unusual_hours_start_utc": "22:00:00",
+    "unusual_hours_end_utc": "06:00:00",
+    "privileged_accounts": ["Administrator", "root", "SYSTEM", "admin"]
+  },
+  "ollama": {
+    "host": "http://localhost:11434",
+    "default_model": "llama3.2",
+    "alternative_models": ["mistral", "deepseek-r1:7b", "phi3.5"],
+    "timeout_seconds": 30,
+    "max_context_events": 20,
+    "temperature": 0.2
+  },
+  "retrieval": {
+    "max_retrieved_records": 10,
+    "min_keyword_length": 3
+  },
+  "export": {
+    "sanitize_csv_formula_injection": true,
+    "include_human_review_checklist": true
+  }
+}

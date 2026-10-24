@@ -1,0 +1,30 @@
+# Node & Build artifacts
+node_modules/
+build/
+dist/
+coverage/
+.playwright-cli/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.pytest_cache/
+*.egg-info/
+
+# SQLite databases & temp files
+*.db
+*.sqlite
+*.sqlite3
+forensiq_cases.db
+
+# Logs & Environment
+*.log
+.DS_Store
+.env*
+!.env.example

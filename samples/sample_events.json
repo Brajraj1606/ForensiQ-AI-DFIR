@@ -1,0 +1,42 @@
+[
+  {
+    "event_id": "EVT-JSON-001",
+    "timestamp": "2026-10-24T01:14:22Z",
+    "host": "WKST-FIN-09",
+    "user": "Administrator",
+    "source_ip": "192.168.1.105",
+    "dest_ip": "192.168.1.10",
+    "event_type": "Logon Succeeded (Event 4624)",
+    "message": "User Administrator successfully logged on via network session type 3."
+  },
+  {
+    "event_id": "EVT-JSON-002",
+    "timestamp": "2026-10-24T01:15:04Z",
+    "host": "WKST-FIN-09",
+    "user": "Administrator",
+    "source_ip": "192.168.1.105",
+    "dest_ip": "-",
+    "event_type": "Process Created (Event 4688)",
+    "message": "cmd.exe executed whoami /all under PID 4092."
+  },
+  {
+    "event_id": "EVT-JSON-003",
+    "timestamp": "2026-10-24T01:20:45Z",
+    "host": "WKST-FIN-09",
+    "user": "Administrator",
+    "source_ip": "192.168.1.105",
+    "dest_ip": "-",
+    "event_type": "Shadow Copy Invalidation",
+    "message": "vssadmin delete shadows /all /quiet executed under PID 5120."
+  },
+  {
+    "event_id": "EVT-JSON-004",
+    "timestamp": "2026-10-24T01:25:30Z",
+    "host": "WKST-FIN-09",
+    "user": "Administrator",
+    "source_ip": "192.168.1.105",
+    "dest_ip": "-",
+    "event_type": "Audit Log Cleared (Event 1102)",
+    "message": "Security Audit Log was purposefully cleared by Administrator."
+  }
+]

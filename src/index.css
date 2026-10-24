@@ -1,0 +1,219 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgba(15, 23, 42, 0.6);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+  }
+}
+
+/* ================= THEME MODES ================= */
+
+/* 1. Tactical Slate (Default) */
+[data-theme="slate"] {
+  background-color: #070b14;
+  color: #e2e8f0;
+}
+
+/* 2. Courtroom / Laboratory Light */
+[data-theme="light"] {
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
+[data-theme="light"] header {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+[data-theme="light"] header .bg-\[\#070b14\] {
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+[data-theme="light"] nav {
+  background-color: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+[data-theme="light"] footer {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #64748b !important;
+}
+[data-theme="light"] .bg-\[\#070b14\],
+[data-theme="light"] .bg-\[\#0b101e\],
+[data-theme="light"] .bg-\[\#0b101d\],
+[data-theme="light"] .bg-\[\#0d1424\],
+[data-theme="light"] .bg-\[\#0f172a\],
+[data-theme="light"] .bg-\[\#0c1222\],
+[data-theme="light"] .bg-\[\#131c31\] {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #1e293b !important;
+}
+[data-theme="light"] .bg-\[\#080d1a\],
+[data-theme="light"] .bg-\[\#060a12\],
+[data-theme="light"] .bg-\[\#090d18\],
+[data-theme="light"] .bg-slate-900,
+[data-theme="light"] .bg-slate-950 {
+  background-color: #f8fafc !important;
+  border-color: #cbd5e1 !important;
+  color: #1e293b !important;
+}
+[data-theme="light"] .bg-slate-800 {
+  background-color: #f1f5f9 !important;
+  border-color: #cbd5e1 !important;
+  color: #334155 !important;
+}
+[data-theme="light"] .bg-slate-800\/70,
+[data-theme="light"] .bg-slate-800\/60,
+[data-theme="light"] .bg-slate-800\/40 {
+  background-color: #f1f5f9 !important;
+  border-color: #e2e8f0 !important;
+  color: #334155 !important;
+}
+[data-theme="light"] .bg-slate-900\/90,
+[data-theme="light"] .bg-slate-900\/80 {
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+[data-theme="light"] .hover\:bg-slate-800:hover,
+[data-theme="light"] .hover\:bg-slate-700:hover {
+  background-color: #e2e8f0 !important;
+  color: #0f172a !important;
+}
+[data-theme="light"] .text-white {
+  color: #0f172a !important;
+}
+[data-theme="light"] .text-slate-100,
+[data-theme="light"] .text-slate-200,
+[data-theme="light"] .text-slate-300 {
+  color: #334155 !important;
+}
+[data-theme="light"] .text-slate-400 {
+  color: #64748b !important;
+}
+[data-theme="light"] .text-slate-500 {
+  color: #94a3b8 !important;
+}
+[data-theme="light"] .border-slate-800,
+[data-theme="light"] .border-slate-700 {
+  border-color: #e2e8f0 !important;
+}
+[data-theme="light"] input,
+[data-theme="light"] select,
+[data-theme="light"] textarea {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+}
+[data-theme="light"] .bg-blue-950\/60,
+[data-theme="light"] .bg-blue-950\/70 {
+  background-color: #eff6ff !important;
+  border-color: #bfdbfe !important;
+}
+[data-theme="light"] .bg-rose-950\/60 {
+  background-color: #fff1f2 !important;
+  border-color: #fecdd3 !important;
+}
+[data-theme="light"] .bg-amber-950\/60 {
+  background-color: #fffbeb !important;
+  border-color: #fde68a !important;
+}
+
+/* 3. Obsidian Pure Black */
+[data-theme="obsidian"] {
+  background-color: #000000;
+  color: #f5f5f5;
+}
+[data-theme="obsidian"] header {
+  background-color: #050505 !important;
+  border-color: #171717 !important;
+}
+[data-theme="obsidian"] header .bg-\[\#070b14\] {
+  background-color: #000000 !important;
+  border-color: #141414 !important;
+}
+[data-theme="obsidian"] nav {
+  background-color: #030303 !important;
+  border-color: #171717 !important;
+}
+[data-theme="obsidian"] footer {
+  background-color: #000000 !important;
+  border-color: #171717 !important;
+}
+[data-theme="obsidian"] .bg-\[\#070b14\],
+[data-theme="obsidian"] .bg-\[\#0b1120\],
+[data-theme="obsidian"] .bg-\[\#090d18\] {
+  background-color: #050505 !important;
+  border-color: #1c1c1c !important;
+}
+[data-theme="obsidian"] .bg-\[\#0b101e\],
+[data-theme="obsidian"] .bg-\[\#0b101d\],
+[data-theme="obsidian"] .bg-\[\#0d1424\],
+[data-theme="obsidian"] .bg-\[\#0f172a\],
+[data-theme="obsidian"] .bg-\[\#131c31\],
+[data-theme="obsidian"] .bg-\[\#0c1222\] {
+  background-color: #0a0a0a !important;
+  border-color: #222222 !important;
+}
+[data-theme="obsidian"] .bg-\[\#080d1a\],
+[data-theme="obsidian"] .bg-\[\#060a12\] {
+  background-color: #020202 !important;
+  border-color: #171717 !important;
+}
+[data-theme="obsidian"] .border-slate-800,
+[data-theme="obsidian"] .border-slate-700 {
+  border-color: #202020 !important;
+}
+
+/* 4. Cyber Indigo */
+[data-theme="cyber"] {
+  background-color: #050816;
+  color: #e0e7ff;
+}
+[data-theme="cyber"] header {
+  background-color: #090f2b !important;
+  border-color: #1e2954 !important;
+}
+[data-theme="cyber"] header .bg-\[\#070b14\] {
+  background-color: #060919 !important;
+  border-color: #192147 !important;
+}
+[data-theme="cyber"] nav {
+  background-color: #070c24 !important;
+  border-color: #1e2954 !important;
+}
+[data-theme="cyber"] footer {
+  background-color: #060919 !important;
+  border-color: #1e2954 !important;
+}
+[data-theme="cyber"] .bg-\[\#070b14\],
+[data-theme="cyber"] .bg-\[\#0b1120\] {
+  background-color: #090f2b !important;
+  border-color: #1e2954 !important;
+}
+[data-theme="cyber"] .bg-\[\#0b101e\],
+[data-theme="cyber"] .bg-\[\#0b101d\],
+[data-theme="cyber"] .bg-\[\#0d1424\],
+[data-theme="cyber"] .bg-\[\#0f172a\],
+[data-theme="cyber"] .bg-\[\#131c31\] {
+  background-color: #0c1438 !important;
+  border-color: #253368 !important;
+}
